@@ -1,0 +1,70 @@
+body{
+background-color: #101012;
+align-items: center;
+justify-content: center;
+display: flex;
+height: 100vh;
+margin: 0;
+
+}
+
+.CIRCULO{
+    width: 300px;
+    height: 300px;
+    background: 
+        conic-gradient(from 0deg at 50%
+        50%,
+            #ff00f2 20%,
+            #ff0000 30%,
+            #64fa00 70%,
+            #d9ff00 10%,
+            #006effbf) 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    box-shadow: 
+       4px 4px 16px #000000bf,
+       -4px -4px 16px #ffffff1a;
+    animation: spin 1s infinite linear;
+    position: relative;
+
+}
+
+@keyframes spin {
+0%{
+    transform: rotate(0deg);
+}
+
+100%{
+    transform: rotate(360deg);
+}    
+}
+
+.COUNT{
+    content: " ";
+    width: 284px;
+    height: 284px;
+    background: #1d1e22;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    margin: 5;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    border-radius: 180px;
+    box-shadow: 
+        4px 4px 16px  #000000bf inset,
+        -4px -4px 8px #ffffff1a inset;
+    animation: spin 1s infinite linear 
+    reverse;
+    color: white;
+
+}   
+
+.PERCENT{
+    font-family: sans-serif;
+    font-size: 6em;
+}
